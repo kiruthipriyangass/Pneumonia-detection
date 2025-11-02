@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-healthcare-blue-light via-white to-healthcare-mint-light min-h-screen;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl shadow-lg p-6;
+  }
+  
+  .btn-primary {
+    @apply bg-healthcare-blue-dark text-white px-6 py-3 rounded-lg font-medium 
+           hover:bg-healthcare-blue transition-colors duration-200 
+           focus:outline-none focus:ring-2 focus:ring-healthcare-blue focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-healthcare-blue-dark px-6 py-3 rounded-lg font-medium border-2 
+           border-healthcare-blue-dark hover:bg-healthcare-blue-light transition-colors 
+           duration-200 focus:outline-none focus:ring-2 focus:ring-healthcare-blue focus:ring-offset-2;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-healthcare-blue 
+           focus:outline-none transition-colors duration-200;
+  }
+}
+
